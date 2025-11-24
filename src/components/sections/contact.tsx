@@ -28,11 +28,16 @@ export function Contact() {
                 body: JSON.stringify(data),
             });
 
-            if (!response.ok) throw new Error("Failed to send message");
+            const result = await response.json();
+
+            if (!response.ok) {
+                throw new Error(result.error || "Failed to send message");
+            }
 
             setStatus("success");
             reset();
-        } catch {
+        } catch (error) {
+            console.error("Contact form error:", error);
             setStatus("error");
         } finally {
             setIsSubmitting(false);
