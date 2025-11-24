@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prasanna Kumar - Portfolio Website
+
+A premium, responsive, and accessible personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
+
+## Features
+
+- **Modern UI/UX**: Clean design with dark/light mode support.
+- **Responsive**: Fully optimized for mobile, tablet, and desktop.
+- **Animations**: Smooth scroll reveals and micro-interactions using Framer Motion.
+- **SEO Optimized**: Meta tags, semantic HTML, and fast performance.
+- **Contact Form**: Functional contact form with API route handler.
+
+## Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Forms**: React Hook Form
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/prasanna-portfolio.git
+    cd prasanna-portfolio
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app`: Pages and API routes.
+- `src/components`: Reusable UI components and sections.
+- `src/lib`: Utility functions and data.
+- `public`: Static assets (images, resume).
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Content**: Update `src/lib/data.ts` to change profile info, skills, projects, etc.
+- **Images**: Place your images in the `public` folder and update paths in `src/lib/data.ts`.
+- **Theme**: Modify `src/app/globals.css` for color variables.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is ready to be deployed on Vercel or Netlify.
 
-## Deploy on Vercel
+### Vercel (Recommended)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  Push your code to GitHub.
+2.  Import the project into Vercel.
+3.  Deploy!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT
